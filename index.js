@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("/")
 
 bot.on('ready', function() {
-    bot.user.setGame("Commande: /help");
+    bot.user.setGame("à bottée les fesses de Wonyu");
     console.log("Connectç");
 });
 
