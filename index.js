@@ -8,7 +8,7 @@ var prefix = ("/")
 
 
 bot.on('ready', function() {
-    bot.user.setGame("Mizu || Serveur");
+    bot.user.setGame("Faire un câlin à Bellamadame);
     console.log("Connect");
 });
 
@@ -21,7 +21,7 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
         .setColor("#40A497")
         .setTitle("Aide aux commandes.")
-        .setDescription("Je suis Mizu-BOT , Voici mes commandes disponible :")
+        .setDescription("Je suis Mr.Métronia , Voici çe que je propose : ")
         .addField("/help", "Affiche les commandes du bot !")
         .addField("/staff", "Vous donne les informations sur la personne du staff désirée.")
         .addField("Salut", "Le bot répond !")
@@ -29,7 +29,7 @@ bot.on('message', message => {
         .addField("/xp", "En dévelopemment.")
         .addField("/site", "Vous donneras le lien du site.")
         .addField("/stats", "Le bot vous envoie des informations sur votre profil !")
-        .setFooter("Menu d'aide - Mizu")
+        .setFooter("Menu d'aide - Métronia)
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur a effectué la commande d'aide !")      
     }
