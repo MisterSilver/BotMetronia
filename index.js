@@ -29,7 +29,7 @@ bot.on('message', message => {
         .addField("/xp", "En dévelopemment.")
         .addField("/site", "Vous donneras le lien du site.")
         .addField("/stats", "Le bot vous envoie des informations sur votre profil !")
-        .setFooter("Menu d'aide - Métronia)
+        .setFooter("Menu d'aide - Métronia")
         message.channel.sendMessage(help_embed);
         console.log("Un utilisateur a effectué la commande d'aide !")      
     }
@@ -85,7 +85,7 @@ bot.on('message', message => {
 
 //message de bienvenue et au revoir
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "bienvenue").send(`Bienvenue ${member} sur le Serveur Mizu \n Si tu à des questions fait /help`)
+    member.guild.channels.find("name", "bienvenue").send(`Bienvenue ${member} sur le Serveur Discord Métronia !`)
 })
 
 bot.on('guildMemberRemove', member => {
