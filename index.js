@@ -8,7 +8,7 @@ var prefix = ("/")
 
 
 bot.on('ready', function() {
-    bot.user.setGame("En Dév);
+    bot.user.setGame("En Dév");
     console.log("Connect");
 });
 
