@@ -8,7 +8,7 @@ var prefix = ("/")
 
 
 bot.on('ready', function() {
-    bot.user.setGame("Faire un câlin à Bellamadame);
+    bot.user.setGame("Faire un câlin à Bellamadame");
     console.log("Connect");
 });
 
@@ -57,42 +57,13 @@ bot.on('message', message => {
         break;
 
     }
-
-    //commande staff pseudo
-    if (message.content === prefix + "wonyu"){
-        var embed = new Discord.RichEmbed()
-                .setTitle("Mizu")
-                .addField("Qui est Wonyu ?", "Fondateur et Chef Développeur du serveur", true)
-                .setColor("#0174DF")
-                .setFooter("Bon moment parmis nous jeune Mizien ! :)")
-         message.channel.sendEmbed(embed);  
-    }
- 
-    if (message.content === prefix + "zelgot") {
-        var embed = new Discord.RichEmbed()
-                .setTitle("Mizu")
-                .addField("Qui est zelgot ?", "Fondateur et Chef Buildeur du serveur", true)
-                .setColor("#0174DF")
-                .setFooter("Bon moment parmis nous jeune Mizien ! :)")
-        message.channel.sendEmbed(embed);  
-    }
-    
-    if (message.content === prefix + "ellyana") {
-        var embed = new Discord.RichEmbed()
-                .setTitle("Mizu")
-                .addField("Qui est Ellyana ?", "Fondatrice et Rédactrice en chef du serveur", true)
-                .setColor("#7C40A4")
-                .setFooter("Bon moment parmis nous jeune Mizien ! :)")
-        message.channel.sendEmbed(embed);  
-    }
-
     //commande perso 
     if (message.content === prefix + "site"){
         var embed = new Discord.RichEmbed()
                 .setTitle("Mizu")
-                .addField("Voici le lien du site :", "(https://www.mizu-mmorpg.fr/)", true)
+                .addField("Voici le lien du site :", "(En cours..)", true)
                 .setColor("#0174DF")
-                .setFooter("Bon moment parmis nous jeune Mizien ! :)")
+                .setFooter("Merveilleuse journée/soirée à toi ;)")
          message.channel.sendEmbed(embed);  
     }
 
